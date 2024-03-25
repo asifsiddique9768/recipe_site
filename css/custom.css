@@ -1,0 +1,266 @@
+:root {
+    --bs-success-rgb: 71, 222, 152 !important;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    /* font-family: Apple Chancery, cursive; */
+}
+
+#topNavBar {
+    flex: 0 1 auto;
+}
+
+.thumbnail-img {
+    width: 50px;
+    height: 50px;
+    margin: 2px
+}
+
+.truncate-1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.truncate-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.modal-dialog.large {
+    width: 80% !important;
+    max-width: unset;
+}
+
+.modal-dialog.mid-large {
+    width: 50% !important;
+    max-width: unset;
+}
+
+@media (max-width:720px) {
+    .modal-dialog.large {
+        width: 100% !important;
+        max-width: unset;
+    }
+    .modal-dialog.mid-large {
+        width: 100% !important;
+        max-width: unset;
+    }
+}
+
+.display-select-image {
+    width: 60px;
+    height: 60px;
+    margin: 2px
+}
+
+img.display-image {
+    width: 100%;
+    height: 45vh;
+    object-fit: cover;
+    background: black;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.img-del-btn {
+    right: 2px;
+    top: -3px;
+}
+
+.img-del-btn>.btn {
+    font-size: 10px;
+    padding: 0px 2px !important;
+}
+
+.strikeBg {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.strikeBg:before {
+    content: "";
+    flex-grow: 1;
+    border-bottom: 2px solid rgba(255,0,0,0.6);
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.strikeBg:after {
+    content: "";
+    flex-grow: 1;
+    border-bottom: 2px solid rgba(255,0,0,0.6);
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+header#cover {
+    height: 75vh;
+    position: relative;
+    background-color: #faf6f3;
+}
+
+header#cover p {
+  padding: 0;
+  margin: 0;
+}
+
+header#cover p:first-of-type{
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: bold;
+  margin: 0 0 0.7rem 0;
+  position: relative;
+}
+
+header#cover p:first-of-type::before {
+  content: "Delicious";
+  position: absolute;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  top: -20px;
+  left: 30px;
+  transform: rotate(-20deg);
+  font-family: cursive;
+  color: rgba(255,0,0,0.6);
+}
+
+header#cover  p:not(:first-child) {
+  font-size: 0.9;
+  opacity: 0.7;
+}
+
+header#cover a {
+  display: block;
+  margin: 2rem 0 0 0;
+  text-decoration: none;
+  background-color: rgba(255,0,0,0.6);;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+}
+
+header#cover .cover-image {
+  width: 55%;
+  height: 75%;
+  background-image: url(../images/recipe-banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: -8px 8px black;
+}
+/* header:before {
+    height: 65vh;
+    background-image: url(../images/recipe-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    content: ""
+} */
+
+nav.onTransparent {}
+
+#topNavBar * {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: lighter;
+}
+
+#topNavBar .dropdown-item {
+    color: var(--bs-dark) !important;
+    text-shadow: none !important;
+}
+
+#topNavBar .navbar-brand {
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 0px;
+  color: rgba(255, 255, 255, 0.8)
+}
+
+#banner-site-title {
+    font-style: italic;
+    font-size: 7em;
+    color: var(--bs-light);
+    text-shadow: 4px 4px #844f33;
+}
+
+#cat-title {
+  position: relative;
+  font-size: 2.5rem;
+  margin: 1rem 0 0 1rem;
+  opacity: 0.7;
+}
+
+#cat-title::before {
+  content: "";
+  height: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  z-index: -1;
+  background-color: rgba(255,0,0,0.6);
+}
+
+.recipe-img {
+    width: 80%;
+    height: 45vh;
+    object-fit: scale-down;
+    /* background: var(--bs-dark); */
+}
+
+.content {
+    display: none;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment-date {
+    font-size: .7em;
+}
